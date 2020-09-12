@@ -25,6 +25,8 @@ export class Posts extends Component {
 			<div className="post-archive">
 				{posts.map(post => 
 					<div className="post-card">
+						{console.log(post)}
+						<img src={post.fimg_url} alt="test"/>
 						<h2>{post.title.rendered}</h2>
 						<div dangerouslySetInnerHTML={{ __html: post.content.rendered }}></div>
 					</div>
